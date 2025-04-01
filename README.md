@@ -9,8 +9,6 @@ Because of the law of WFC, rotation to a cube is restricted in 90 degrees at X, 
 
 ![uuv mapping](./tile.png)
 
-![uuv mapping](./tilesystem2.png)
-
 How many results of transform can one parent socket has in total? We know one socket has 4 rotations and 2 flips as its a square. Notice here I call it "flip" rather than "mirror", because we care about the differnence in shape but not the mirror plane. So it's easy to get the number of 8. To make sure we don't mess it up, when we record the transform message, the flip is recorded prior to the rotation. But what if the mirror tranform operation happens later than rotation? The answer is, we can translate it.
 
 ![uuv mapping](./sub.png)
@@ -31,6 +29,8 @@ By this information, we can easily define different type of sockets without worr
 
 ## Add Tiles To Tileset
 When we initiate a tile we have already defined 6 sockets and their family types, transform messages, and names. Actually we don't care if two tiles have different content while the only thing we care if these two tile have the same sockets. After every time we transform the tile and add it to the tileset, we record the transform 3*3 matrix. At the same time, the tile generator will check if there is any socket different from the original. If yes, the new tile will be generated. Otherwise it won't. 
+
+![uuv mapping](./tilesystem2.png)
 
 When we add this new tile to the tileset, the tileset will compare the matrix and sockets of new tile to every existed tile to avoid repitition.
 ## Generate Tile-Rules From Socket-Rules

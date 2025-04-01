@@ -19,6 +19,8 @@ How many results of transform can one parent socket has in total? We know one so
 
 But is it true that every socket has 8 sub-sockets? Imagine that if we have a circle in a socket. No matter how we rotate and flip, the shape remains the same. So we have to know the law behind it. I notice that shapes can be categorized by its symmetry type, and it's highly relavent to the number of sub-sockets(some out of 8 have the same shape).
 
+![uuv mapping](./type.png)
+
 And also, the number of sub-sockets is relavent to how many symmetric axis at the square's centor the shape has. By this information, we can easily define different type of sockets without worring introducing repeated sockets when we transform a tile.
 ## Add Tiles To Tileset
 When we initiate a tile we have already defined 6 sockets and their family types, transform messages, and names. After every time we transform the tile and add it to the tileset, we record the transform 3*3 matrix. At the same time, the tile generator will check if there is any socket different from the original. If yes, the new tile will be generated. Otherwise it won't. 

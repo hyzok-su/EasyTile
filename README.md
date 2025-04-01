@@ -23,7 +23,11 @@ But is it true that every socket has 8 sub-sockets? Imagine that if we have a ci
 
 And also, the number of sub-sockets is relavent to how many symmetric axis at the square's centor the shape has. 
 
+![uuv mapping](./family.png)
+
 By this information, we can easily define different type of sockets without worring introducing repeated sockets when we transform a socket. The diagram below shows how symmetric shapes are processed.
+
+![uuv mapping](./typerule.png)
 
 ## Add Tiles To Tileset
 When we initiate a tile we have already defined 6 sockets and their family types, transform messages, and names. Actually we don't care if two tiles have different content while the only thing we care if these two tile have the same sockets. After every time we transform the tile and add it to the tileset, we record the transform 3*3 matrix. At the same time, the tile generator will check if there is any socket different from the original. If yes, the new tile will be generated. Otherwise it won't. 

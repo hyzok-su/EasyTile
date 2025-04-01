@@ -9,4 +9,4 @@ Because of the law of WFC, rotation to a cube is restricted in 90 degrees at X, 
 
 How many results of transform can one parent socket has in total? We know one socket has 4 rotations and 2 flips as its a square. Notice here I call it "flip" rather than "mirror", because we care about the differnence in shape but not the mirror plane. So it's easy to get the number of 8. 
 
-But is that true? Imagine that if we have a circle in a socket. No matter how we rotate and flip, the shape remains the same. So we have to know the law of different shapes. I notice that
+But is that true? Imagine that if we have a circle in a socket. No matter how we rotate and flip, the shape remains the same. So we have to know the law behind it. I notice that

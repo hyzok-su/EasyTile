@@ -13,6 +13,8 @@ But is that true? Imagine that if we have a circle in a socket. No matter how we
 
 And also, the number of sub-sockets is relavent to how many symmetric axis at the square's centor the shape has. By this information, we can easily define different type of sockets without worring introducing repeated sockets when we transform a tile.
 ## Add Tiles To Tileset
-When we initiate a tile we have already defined 6 sockets and their family types, transform messages, and names. After every time we transform the tile and add it to the tileset, the socket information updated and
+When we initiate a tile we have already defined 6 sockets and their family types, transform messages, and names. After every time we transform the tile and add it to the tileset, we record the transform 3*3 matrix. At the same time, the tile generator will check if there is any socket different from the original. If yes, the new tile will be generated. Otherwise it won't. 
 
+When we add this new tile to the tileset, the tileset will compare the matrix and sockets of new tile to every existed tile to avoid repitition.
+## Generate Tile-rules From Socket-rules
 We can store the socket connection rules in a dictionary. By checking tiles one by one to each other, we know if the according socket-pairs are in the dictionary, and we can change the socket-rules into tile-rules.

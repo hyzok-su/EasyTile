@@ -17,4 +17,6 @@ When we initiate a tile we have already defined 6 sockets and their family types
 
 When we add this new tile to the tileset, the tileset will compare the matrix and sockets of new tile to every existed tile to avoid repitition.
 ## Generate Tile-Rules From Socket-Rules
-We can store the socket connection rules in a dictionary. By checking tiles one by one to each other, we know if the according socket-pairs are in the dictionary. If yes, a new rule will be generated.
+We can store the socket connection rules in a dictionary. Every time we add a socket-pair into the dictionary, we automatically add its sub-pairs. Every socket has sub-sockets, so it's easy to understand that a socket-pair also has sub-pairs. Notice that the reverse pair should also be added because WFC is a undirected graph.
+
+After the dictionary is created we can check tiles one by one to each other, by which we know if the according socket-pairs are in the dictionary. If yes, a new rule will be generated and add to tile-rules for WFC solver.

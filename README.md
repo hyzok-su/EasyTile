@@ -26,7 +26,7 @@ And also, the number of sub-sockets is relavent to how many symmetric axis at th
 By this information, we can easily define different type of sockets without worring introducing repeated sockets when we transform a socket. The diagram below shows how symmetric shapes are processed.
 
 ## Add Tiles To Tileset
-When we initiate a tile we have already defined 6 sockets and their family types, transform messages, and names. After every time we transform the tile and add it to the tileset, we record the transform 3*3 matrix. At the same time, the tile generator will check if there is any socket different from the original. If yes, the new tile will be generated. Otherwise it won't. 
+When we initiate a tile we have already defined 6 sockets and their family types, transform messages, and names. Actually we don't care if two tiles have different content while the only thing we care if these two tile have the same sockets. After every time we transform the tile and add it to the tileset, we record the transform 3*3 matrix. At the same time, the tile generator will check if there is any socket different from the original. If yes, the new tile will be generated. Otherwise it won't. 
 
 When we add this new tile to the tileset, the tileset will compare the matrix and sockets of new tile to every existed tile to avoid repitition.
 ## Generate Tile-Rules From Socket-Rules

@@ -17,4 +17,4 @@ When we initiate a tile we have already defined 6 sockets and their family types
 
 When we add this new tile to the tileset, the tileset will compare the matrix and sockets of new tile to every existed tile to avoid repitition.
 ## Generate Tile-rules From Socket-rules
-We can store the socket connection rules in a dictionary. By checking tiles one by one to each other, we know if the according socket-pairs are in the dictionary, and we can change the socket-rules into tile-rules.
+We can store the socket connection rules in a dictionary. By checking tiles one by one to each other, we know if the according socket-pairs are in the dictionary. If yes, a new rule will be generated.

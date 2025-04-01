@@ -30,6 +30,8 @@ namespace Tile
             Socket5 = zp;
             Matrix = MatrixHelper.None;
         }
+        
+        // 2 main generators (I'm too lazy to make another 4 generators)
         public Tile3d RotateZ()
         {
             var output = new Tile3d(this.Name, this.Socket3, this.Socket2, this.Socket0, this.Socket1,

@@ -4,6 +4,9 @@
 
 EasyTileWFC is not just a library but a concept. At its core, it provides an efficient method to preprocess 3D tilesets before they are used in a Wave Function Collapse (WFC) solver.  
 
+![UUV Mapping](./pf_10_1.jpg) 
+![UUV Mapping](./pf_10_2.jpg) 
+
 EasyTileWFC aims to simplify the repetitive task of creating and organizing large numbers of WFC assets for game developers. This idea emerged from my own experience: while working on a large tileset with many reusable connections, I realized that manually setting the rules was tedious and inefficient.  
 
 ## Overview  

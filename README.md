@@ -1,14 +1,14 @@
-# EasyTile  
+# EasyTileWFC
 
-EasyTile is not just a library but a concept. At its core, it provides an efficient method to preprocess 3D tilesets before they are used in a Wave Function Collapse (WFC) solver.  
+EasyTileWFC is not just a library but a concept. At its core, it provides an efficient method to preprocess 3D tilesets before they are used in a Wave Function Collapse (WFC) solver.  
 
-EasyTile aims to simplify the repetitive task of creating and organizing large numbers of WFC assets for game developers. This idea emerged from my own experience: while working on a large tileset with many reusable connections, I realized that manually setting the rules was tedious and inefficient.  
+EasyTileWFC aims to simplify the repetitive task of creating and organizing large numbers of WFC assets for game developers. This idea emerged from my own experience: while working on a large tileset with many reusable connections, I realized that manually setting the rules was tedious and inefficient.  
 
 ## Overview  
 
-The logic behind EasyTile is simple. Since tiles are cube-like, each tile has six faces. Each face contains a set of valid connection pairs. However, when a tile undergoes transformations such as rotation or mirroring, the information on its faces also changes. To simplify this, we refer to the faces containing this connection data as "sockets."  
+The logic behind EasyTileWFC is simple. Since tiles are cube-like, each tile has six faces. Each face contains a set of valid connection pairs. However, when a tile undergoes transformations such as rotation or mirroring, the information on its faces also changes. To simplify this, we refer to the faces containing this connection data as "sockets."  
 
-EasyTile provides a structured approach to associating transformations with tiles and their sockets.  
+EasyTileWFC provides a structured approach to associating transformations with tiles and their sockets.  
 
 ## Defining a Tile  
 
